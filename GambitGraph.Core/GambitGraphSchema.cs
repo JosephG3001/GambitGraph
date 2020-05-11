@@ -1,4 +1,5 @@
-﻿using GambitGraph.Core.Queries;
+﻿using GambitGraph.Core.Mutations;
+using GambitGraph.Core.Queries;
 using GraphQL;
 using GraphQL.Types;
 using System;
@@ -12,6 +13,7 @@ namespace GambitGraph.Core
         public GambitGraphSchema(IDependencyResolver resolver) : base(resolver)
         {
             Query = resolver.Resolve<SpellQuery>();
+            Mutation = resolver.Resolve<SpellMutation>();
         }
     }
 }

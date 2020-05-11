@@ -30,5 +30,12 @@ namespace GambitGraph.Repository
         {
             return await Context.Spells.SingleOrDefaultAsync(m => m.SpellId == id);
         }
+
+        public async Task<Spells> Add(Spells spell)
+        {
+            Context.Spells.Add(spell);
+            await Context.SaveChangesAsync();
+            return spell;
+        }
     }
 }

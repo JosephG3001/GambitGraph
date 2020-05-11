@@ -16,47 +16,11 @@ namespace GambitGraph.DataAccess
         {
         }
 
-        public virtual DbSet<Absorbs> Absorbs { get; set; }
-        public virtual DbSet<Heals> Heals { get; set; }
-        public virtual DbSet<Nukes> Nukes { get; set; }
         public virtual DbSet<SpellJobLevels> SpellJobLevels { get; set; }
         public virtual DbSet<Spells> Spells { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Absorbs>(entity =>
-            {
-                entity.HasKey(e => e.AbsorbId);
-
-                entity.HasOne(d => d.Spell)
-                    .WithMany(p => p.Absorbs)
-                    .HasForeignKey(d => d.SpellId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Absorbs_Spells");
-            });
-
-            modelBuilder.Entity<Heals>(entity =>
-            {
-                entity.HasKey(e => e.HealId);
-
-                entity.HasOne(d => d.Spell)
-                    .WithMany(p => p.Heals)
-                    .HasForeignKey(d => d.SpellId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Heals_Spells");
-            });
-
-            modelBuilder.Entity<Nukes>(entity =>
-            {
-                entity.HasKey(e => e.NukeId);
-
-                entity.HasOne(d => d.Spell)
-                    .WithMany(p => p.Nukes)
-                    .HasForeignKey(d => d.SpellId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Nukes_Spells");
-            });
-
             modelBuilder.Entity<SpellJobLevels>(entity =>
             {
                 entity.HasKey(e => e.SpellJobLevelId);
@@ -73,62 +37,8 @@ namespace GambitGraph.DataAccess
                 entity.HasKey(e => e.SpellId)
                     .HasName("PK_SpellsEF");
 
-                entity.Property(e => e.Alias)
-                    .HasColumnName("alias")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Casttime)
-                    .HasColumnName("casttime")
-                    .HasColumnType("numeric(10, 2)");
-
-                entity.Property(e => e.CasttimeSpecified).HasColumnName("casttimeSpecified");
-
-                entity.Property(e => e.Duration).HasColumnName("duration");
-
-                entity.Property(e => e.Element)
-                    .HasColumnName("element")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
                 entity.Property(e => e.English)
                     .HasColumnName("english")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Id).HasColumnName("id");
-
-                entity.Property(e => e.IdSpecified).HasColumnName("idSpecified");
-
-                entity.Property(e => e.Index).HasColumnName("index");
-
-                entity.Property(e => e.Mpcost).HasColumnName("mpcost");
-
-                entity.Property(e => e.MpcostSpecified).HasColumnName("mpcostSpecified");
-
-                entity.Property(e => e.Prefix)
-                    .HasColumnName("prefix")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Recast)
-                    .HasColumnName("recast")
-                    .HasColumnType("numeric(10, 2)");
-
-                entity.Property(e => e.RecastSpecified).HasColumnName("recastSpecified");
-
-                entity.Property(e => e.Skill)
-                    .HasColumnName("skill")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Targets)
-                    .HasColumnName("targets")
-                    .HasMaxLength(50)
-                    .IsUnicode(false);
-
-                entity.Property(e => e.Type)
-                    .HasColumnName("type")
                     .HasMaxLength(50)
                     .IsUnicode(false);
             });

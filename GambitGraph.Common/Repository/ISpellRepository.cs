@@ -11,5 +11,6 @@ namespace GambitGraph.Common.Repository
         Task<ICollection<Spells>> GetAll();
         Task<Spells> GetById(int id);
         Task<ICollection<Spells>> Search(string english);
+        Task<Spells> Add(Spells spell);
     }
 }

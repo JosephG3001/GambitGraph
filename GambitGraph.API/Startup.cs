@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using GambitGraph.Common.Repository;
 using GambitGraph.Core;
+using GambitGraph.Core.Mutations;
 using GambitGraph.Core.Queries;
 using GambitGraph.Core.Types;
 using GambitGraph.DataAccess;
@@ -45,6 +46,8 @@ namespace GambitGraph.API
             // GraphQL
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<SpellQuery>();
+            services.AddSingleton<SpellMutation>();
+            services.AddSingleton<SpellInputType>();
             services.AddSingleton<SpellType>();
             var sp = services.BuildServiceProvider();
             services.AddSingleton<ISchema>(new GambitGraphSchema(new FuncDependencyResolver(type => sp.GetService(type))));
