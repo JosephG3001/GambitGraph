@@ -1,0 +1,43 @@
+﻿{
+   "ContextClassName": "Gambitbot13Context",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": null,
+   "ProjectRootNamespace": "GambitGraph.DataAccess",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 0,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Absorbs]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Heals]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Nukes]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[SpellJobLevels]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[Spells]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseDbContextSplitting": false,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseSpatial": false
+}

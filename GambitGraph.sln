@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GambitGraph.API", "GambitGraph.API\GambitGraph.API.csproj", "{D874449C-B686-48FF-803C-8E0BA8CC3D8B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GambitGraph.DataAccess", "GambitGraph.DataAccess\GambitGraph.DataAccess.csproj", "{1B2BDD54-B690-40A8-B6D3-BE347DD250DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GambitGraph.Core", "GambitGraph.Core\GambitGraph.Core.csproj", "{AA9DB9E0-E72F-48E3-BE43-C55F0C301D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GambitGraph.Common", "GambitGraph.Common\GambitGraph.Common.csproj", "{19E80D9B-C4A5-4DAA-9867-9E83B3A29F68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GambitGraph.Repository", "GambitGraph.Repository\GambitGraph.Repository.csproj", "{8D2B909E-D509-40A9-B29F-CBACED5D29A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D874449C-B686-48FF-803C-8E0BA8CC3D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D874449C-B686-48FF-803C-8E0BA8CC3D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D874449C-B686-48FF-803C-8E0BA8CC3D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D874449C-B686-48FF-803C-8E0BA8CC3D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B2BDD54-B690-40A8-B6D3-BE347DD250DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2BDD54-B690-40A8-B6D3-BE347DD250DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2BDD54-B690-40A8-B6D3-BE347DD250DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2BDD54-B690-40A8-B6D3-BE347DD250DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA9DB9E0-E72F-48E3-BE43-C55F0C301D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9DB9E0-E72F-48E3-BE43-C55F0C301D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9DB9E0-E72F-48E3-BE43-C55F0C301D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9DB9E0-E72F-48E3-BE43-C55F0C301D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E80D9B-C4A5-4DAA-9867-9E83B3A29F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E80D9B-C4A5-4DAA-9867-9E83B3A29F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E80D9B-C4A5-4DAA-9867-9E83B3A29F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E80D9B-C4A5-4DAA-9867-9E83B3A29F68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D2B909E-D509-40A9-B29F-CBACED5D29A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D2B909E-D509-40A9-B29F-CBACED5D29A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D2B909E-D509-40A9-B29F-CBACED5D29A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D2B909E-D509-40A9-B29F-CBACED5D29A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB07C86E-4144-4BF0-8A76-35BB0037604B}
+	EndGlobalSection
+EndGlobal
